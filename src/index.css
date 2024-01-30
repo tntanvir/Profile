@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+    background-image: url("/src/assets/bg-1.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* backgroun */
+}
