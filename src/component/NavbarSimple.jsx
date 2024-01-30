@@ -13,17 +13,17 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { gitUser } from "../App";
-
+import { MdDarkMode } from "react-icons/md";
 function NavList() {
     return (
-        <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 dark:text-white text-black">
+        <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 dark:text-white text-black cursor-pointer">
             <Typography
                 as="li"
                 variant="small"
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors ">
+                <a href="#" className="flex items-center hover:text-dkText transition-colors ">
                     Pages
                 </a>
             </Typography>
@@ -33,7 +33,7 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href="#" className="flex items-center hover:text-dkText transition-colors">
                     Account
                 </a>
             </Typography>
@@ -43,7 +43,7 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href="#" className="flex items-center hover:text-dkText transition-colors">
                     Blocks
                 </a>
             </Typography>
@@ -53,7 +53,7 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-blue-500 transition-colors">
+                <a href="#" className="flex items-center hover:text-dkText transition-colors">
                     Docs
                 </a>
             </Typography>
@@ -124,14 +124,14 @@ export function NavbarSimple() {
     // ---------------------------------
 
     return (
-        // <Navbar className={`mx-auto max-w-screen md:px-24 py-3 rounded-none top-0 sticky z-50  ${scrl ? '' : "shadow-none"} dark:shadow-dkText  bg-white dark:bg-dkColor dark:text-white border-none px-4`}>
+
         <Navbar className={`mx-auto max-w-screen md:px-24 py-3 rounded-none top-0 sticky z-50 ${scrl ? 'bg-transparent' : them === "dark" ? "bg-dkColor" : "bg-white"} border-none px-4 shadow-none `}>
             <div className="flex items-center justify-between  text-blue-gray-900 dark:text-white">
                 <Typography
                     as="a"
-                    href="#"
+                    href="/"
                     variant="h6"
-                    className="mr-4 cursor-pointer py-1.5"
+                    className="mr-4 cursor-pointer text-2xl py-1.5"
                 >
                     Tanvir
                 </Typography>
@@ -142,9 +142,9 @@ export function NavbarSimple() {
 
                         {
                             them === "dark" ?
-                                <CiLight onClick={() => mode()} className="text-2xl" />
+                                <MdDarkMode onClick={() => mode()} className="text-2xl cursor-pointer hover:text-dkText" />
                                 :
-                                <CiLight onClick={() => mode()} className="text-2xl" />
+                                <CiLight onClick={() => mode()} className="text-2xl cursor-pointer hover:text-dkText" />
                         }
                     </div>
                 </div>
@@ -152,9 +152,9 @@ export function NavbarSimple() {
                 <div className="flex justify-center items-center gap-4 lg:hidden">
                     {
                         them === "dark" ?
-                            <CiLight onClick={() => mode()} className="text-2xl lg:hidden" />
+                            <MdDarkMode onClick={() => mode()} className="text-2xl lg:hidden  cursor-pointer hover:text-dkText" />
                             :
-                            <CiLight onClick={() => mode()} className="text-2xl lg:hidden" />
+                            <CiLight onClick={() => mode()} className="text-2xl lg:hidden  cursor-pointer hover:text-dkText" />
                     }
                     <IconButton
                         variant="text"

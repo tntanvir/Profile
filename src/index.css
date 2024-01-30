@@ -8,3 +8,17 @@
     background-repeat: no-repeat;
     /* backgroun */
 }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00dc82;
+    border-radius: 20px;
+}
