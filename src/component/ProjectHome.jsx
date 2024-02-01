@@ -10,6 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from 'react';
+import { Button } from '@material-tailwind/react';
 const ProjectHome = () => {
     const project = [
         {
@@ -29,23 +30,23 @@ const ProjectHome = () => {
         {
             "id": 3,
             "img": flowershop,
-            "live": "https://taw-heed.netlify.app/",
-            "git": "https://github.com/tntanvir/Tawheed",
-            "dis": "Digital home for all things Muslim",
+            "live": "https://flower-shops.vercel.app/",
+            "git": "https://github.com/tntanvir/flower-shop",
+            "dis": "Flower Shop UI",
         },
         {
             "id": 4,
             "img": proedu,
-            "live": "https://taw-heed.netlify.app/",
-            "git": "https://github.com/tntanvir/Tawheed",
-            "dis": "Digital home for all things Muslim",
+            "live": "https://proedu.vercel.app/",
+            "git": "https://github.com/tntanvir/pro-edu",
+            "dis": "Education UI",
         },
         {
             "id": 5,
             "img": gituser,
-            "live": "https://taw-heed.netlify.app/",
-            "git": "https://github.com/tntanvir/Tawheed",
-            "dis": "Digital home for all things Muslim",
+            "live": "https://user-git.netlify.app/",
+            "git": "https://github.com/tntanvir/user-git",
+            "dis": "Find GitHub User",
         },
     ]
     var settings = {
@@ -59,7 +60,7 @@ const ProjectHome = () => {
         initialSlide: 0,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         responsive: [
             {
                 breakpoint: 990,
@@ -101,7 +102,7 @@ const ProjectHome = () => {
                 <div>
                     <h1 className='md:text-5xl text-3xl '>Project</h1>
                 </div>
-                <p className='md:text-xl dark:text-gray-300 text-gray-600'>I enjoy developing simple, clean websites that provide real value to the end user.Fullstack development using react js, node js, express js, mongodb, Django.To upgrade my skill I love to face new technologies and new targets. currently i'm learning Data Structures and Algorithms (DSA). </p>
+                <p className='md:text-xl dark:text-gray-300 text-gray-600'> </p>
             </div>
             <div className='md:w-11/12 w-full relative'>
                 <div className='w-full absolute top-[50%]  flex justify-between'>
@@ -140,7 +141,9 @@ const ProjectHome = () => {
                         ))
                     }
                 </Slider>
-
+                <div className='flex justify-center'>
+                    <Button className='bg-transparent border border-dkText opacity-100 dark:text-white text-black' >Show more</Button>
+                </div>
             </div>
 
         </section>
