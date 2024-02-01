@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <p className='md:text-xl dark:text-gray-300 text-gray-600'>I enjoy developing simple, clean websites that provide real value to the end user.Fullstack development using react js, node js, express js, mongodb, Django.To upgrade my skill I love to face new technologies and new targets. currently i'm learning Data Structures and Algorithms (DSA). </p>
             </div>
-            <div className='md:flex justify-between'>
+            <div className='lg:flex justify-between'>
                 <fieldset className="border border-solid border-gray-300 rounded p-4 m-4 w-72 min-h-80">
                     <legend className="text-4xl text-dkText font-bold mb-2">
                         <FaLightbulb />
