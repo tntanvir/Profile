@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './Hero';
-import Skill from './Skill';
 import About from './About';
 
 const Home = () => {
@@ -8,7 +7,6 @@ const Home = () => {
         <div className=''>
             <Hero />
             <About />
-            <Skill />
         </div>
     );
 };

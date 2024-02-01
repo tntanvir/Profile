@@ -1,5 +1,4 @@
 
-import { Button } from "@material-tailwind/react";
 import { NavbarSimple } from "./component/NavbarSimple";
 import Home from "./component/Home";
 import { useState } from "react";
