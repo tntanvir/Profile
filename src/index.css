@@ -6,7 +6,7 @@
     background-image: url("/src/assets/bg-1.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* backgroun */
+    background-position: top center;
 }
 
 :root {

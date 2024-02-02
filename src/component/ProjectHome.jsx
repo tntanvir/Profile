@@ -105,7 +105,7 @@ const ProjectHome = () => {
                 <p className='md:text-xl dark:text-gray-300 text-gray-600'> </p>
             </div>
             <div className='md:w-11/12 w-full relative'>
-                <div className='w-full absolute top-[50%]  flex justify-between'>
+                <div className='w-full absolute top-[40%]  flex justify-between'>
                     <button className='text-xl md:text-2xl z-20 bg-gray-800/50 hover:text-dkText text-white rounded-full p-2' onClick={() => arrowRef.current.slickPrev()}><FaChevronLeft /></button>
                     <button className='text-xl md:text-2xl z-20 bg-gray-800/50 hover:text-dkText text-white rounded-full p-2' onClick={() => arrowRef.current.slickNext()}><FaChevronRight /> </button>
                 </div>
