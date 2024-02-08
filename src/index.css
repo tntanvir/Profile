@@ -9,6 +9,23 @@
     background-position: top center;
 }
 
+.contect {
+    background-image: url("/src/assets/10087.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+.project {
+    /* background-image: url("/src/assets/10049.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 50px; */
+    /* opacity: 0.1; */
+}
+
 :root {
     scroll-behavior: smooth;
 }

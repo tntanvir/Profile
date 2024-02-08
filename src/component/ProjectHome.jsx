@@ -97,7 +97,7 @@ const ProjectHome = () => {
     const arrowRef = useRef(null);
     return (
 
-        <section className='min-h-screen py-20 flex flex-col justify-center items-center md:px-28 px-2'>
+        <section className='min-h-screen py-20 flex flex-col justify-center items-center md:px-28 px-2 project'>
             <div className='text-center flex flex-col gap-7'>
                 <div>
                     <h1 className='md:text-5xl text-3xl '>Project</h1>

@@ -3,6 +3,7 @@ import { NavbarSimple } from "./component/NavbarSimple";
 import Home from "./component/Home";
 import { useState } from "react";
 import { createContext } from "react";
+import Footer from "./component/Footer";
 export const gitUser = createContext();
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <gitUser.Provider value={[gThem, setGThem]}>
         <NavbarSimple />
         <Home />
+        <Footer />
       </gitUser.Provider>
     </div>
   )
