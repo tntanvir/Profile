@@ -4,6 +4,7 @@ import Home from "./component/Home";
 import { useState } from "react";
 import { createContext } from "react";
 import Footer from "./component/Footer";
+import Lastsection from "./component/Lastsection";
 export const gitUser = createContext();
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
       <gitUser.Provider value={[gThem, setGThem]}>
         <NavbarSimple />
         <Home />
-        <Footer />
+        <Lastsection />
       </gitUser.Provider>
     </div>
   )

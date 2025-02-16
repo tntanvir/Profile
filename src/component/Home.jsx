@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from './Hero';
-import About from './About';
 import ProjectHome from './ProjectHome';
 import ContectHome from './ContectHome';
+import About from './About';
+
 
 const Home = () => {
     return (
@@ -10,7 +11,9 @@ const Home = () => {
             <Hero />
             <About />
             <ProjectHome />
-            <ContectHome />
+
+            {/* <ContectHome /> */}
+
         </div>
     );
 };
