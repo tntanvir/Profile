@@ -72,6 +72,7 @@ const ProjectHome = () => {
                     ease: "easeInOut",
                 }}
             >
+
                 <div
                     className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] rounded-full filter blur-[60px] sm:blur-[80px] md:blur-[90px] 
                     bg-[#00dc82]/30 dark:bg-[#00dc82]/20"
