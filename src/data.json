@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Phibook",
+        "icon": "🐾",
+        "image": "phitbook",
+        "description": "Connect, share, and engage with friends on our social media platform. Post updates, like, comment, and explore a vibrant community in real-time!",
+        "liveUrl": "https://phibook1.web.app/",
+        "client": "",
+        "server": "",
+        "techStack": [
+            "React",
+            "Tailwind",
+            "Django REST framework"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Style Swap",
+        "icon": "🐾",
+        "image": "style",
+        "description": "An interactive eCommerce platform offering a seamless shopping experience with a variety of products, secure checkout, and user-friendly navigation for buyers and sellers.",
+        "liveUrl": "https://style-23.web.app/",
+        "client": "",
+        "server": "",
+        "techStack": [
+            "React",
+            "Tailwind",
+            "Django REST framework"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Red Drop",
+        "icon": "🐾",
+        "image": "redDrop",
+        "description": "Save lives by connecting blood donors with those in need. Join our blood donation platform to make a difference and help patients in critical situations.",
+        "liveUrl": "https://red-drop-4d803.web.app/",
+        "client": "",
+        "server": "",
+        "techStack": [
+            "React",
+            "Tailwind",
+            "Django REST framework"
+        ]
+    }
+]

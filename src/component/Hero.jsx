@@ -17,10 +17,10 @@ const Hero = () => {
             <div className='text-dkText '>
                 <TypeAnimation
                     sequence={[
-                        'Software Engineer ',
+                        'Django Developer &',
                         1000,
 
-                        'Web developer .',
+                        'React Developer .',
                         1000,
                     ]}
                     wrapper="span"

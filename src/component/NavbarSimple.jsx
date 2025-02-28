@@ -24,7 +24,7 @@ function NavList() {
                 className="p-1 font-medium"
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors ">
-                    Pages
+                    Home
                 </a>
             </Typography>
             <Typography
@@ -34,7 +34,7 @@ function NavList() {
                 className="p-1 font-medium"
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors">
-                    Account
+                    About
                 </a>
             </Typography>
             <Typography
@@ -44,7 +44,7 @@ function NavList() {
                 className="p-1 font-medium"
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors">
-                    Blocks
+                    Contect
                 </a>
             </Typography>
             <Typography
@@ -54,7 +54,7 @@ function NavList() {
                 className="p-1 font-medium"
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors">
-                    Docs
+                    Bloge
                 </a>
             </Typography>
         </ul>

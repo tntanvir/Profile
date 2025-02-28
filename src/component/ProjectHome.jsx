@@ -4,57 +4,53 @@ import { motion } from "framer-motion"
 import { ExternalLink } from "lucide-react"
 
 import redDrop from '../project/redDrop.png'
+import phitbook from '../project/phitbook.png'
+import style from '../project/style.png'
+import { Link } from "react-router-dom";
+import projects from '../data.json'
 
-const projects = [
-    {
-        title: "Furry Cares",
-        icon: "🐾",
-        image: redDrop,
-        description: "A web application allowing pet owners to access & share valuable pet care tips and stories.",
-        liveUrl: "#",
-        techStack: ["Tailwind", "TypeScript", "Next.js", "Prisma", "Vercel", "Express"],
-    },
-    {
-        title: "Rideflow",
-        icon: "🚲",
-        image: redDrop,
-        description: "A platform for renting bikes, managing bookings, and handling payments seamlessly.",
-        liveUrl: "#",
-        techStack: ["React", "Redux", "TypeScript", "Vercel", "Express", "Tailwind"],
-    },
-    {
-        title: "Sportify",
-        icon: "🏀",
-        image: redDrop,
-        description: "An e-commerce platform offering various sporting equipment and accessories.",
-        liveUrl: "#",
-        techStack: ["React", "Redux", "TypeScript", "Node.js", "Vercel", "Express"],
-    },
-    {
-        title: "TechBlog",
-        icon: "💻",
-        image: redDrop,
-        description: "A dynamic blog platform for tech enthusiasts to share and discuss the latest in technology.",
-        liveUrl: "#",
-        techStack: ["Vue.js", "Nuxt.js", "MongoDB", "Node.js", "Netlify", "Sass"],
-    },
-    {
-        title: "EcoTrack",
-        icon: "🌿",
-        image: redDrop,
-        description: "An app for tracking and reducing personal carbon footprint through daily activities.",
-        liveUrl: "#",
-        techStack: ["React Native", "Firebase", "Redux", "Expo", "Chart.js"],
-    },
-    {
-        title: "CodeCollab",
-        icon: "👥",
-        image: redDrop,
-        description: "A real-time collaborative coding platform for remote teams and pair programming.",
-        liveUrl: "#",
-        techStack: ["Socket.io", "Express", "MongoDB", "React", "Docker", "AWS"],
-    },
-]
+// const projectsd = [
+//     {
+//         id: 1,
+//         title: "Phibook",
+//         icon: "🐾",
+//         image: phitbook,
+//         description: "Connect, share, and engage with friends on our social media platform. Post updates, like, comment, and explore a vibrant community in real-time!",
+//         liveUrl: "https://phibook1.web.app/",
+//         client: '',
+//         server: '',
+//         techStack: ["React", "Tailwind", 'Django REST framework'],
+//     },
+//     {
+//         id: 2,
+//         title: "Style Swap",
+//         icon: "🐾",
+//         image: style,
+//         description: "An interactive eCommerce platform offering a seamless shopping experience with a variety of products, secure checkout, and user-friendly navigation for buyers and sellers.",
+//         liveUrl: "https://style-23.web.app/",
+//         client: '',
+//         server: '',
+//         techStack: ["React", "Tailwind", 'Django REST framework'],
+//     },
+//     {
+//         id: 3,
+//         title: "Red Drop",
+//         icon: "🐾",
+//         image: redDrop,
+//         description: "Save lives by connecting blood donors with those in need. Join our blood donation platform to make a difference and help patients in critical situations.",
+//         liveUrl: "https://red-drop-4d803.web.app/",
+//         client: '',
+//         server: '',
+//         techStack: ["React", "Tailwind", 'Django REST framework'],
+//     },
+
+
+// ]
+const imageMap = {
+    phitbook: phitbook,
+    style: style,
+    redDrop: redDrop
+};
 
 const ProjectHome = () => {
     return (
@@ -102,7 +98,7 @@ const ProjectHome = () => {
                         {/* Project Image */}
                         <div className="relative rounded-xl overflow-hidden mb-4 sm:mb-5 border border-zinc-700">
                             <img
-                                src={project.image || "/placeholder.svg"}
+                                src={imageMap[project.image] || "/placeholder.svg"}
                                 alt={project.title}
                                 className="w-full h-32 sm:h-40 object-cover"
                             />
@@ -113,14 +109,23 @@ const ProjectHome = () => {
                             <h3 className="text-lg sm:text-xl font-semibold dark:text-white flex items-center gap-2">
                                 <span className="text-xl sm:text-2xl">{project.icon}</span> {project.title}
                             </h3>
-                            <a
-                                href={project.liveUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 bg-zinc-700 rounded-full text-xs sm:text-sm dark:text-white transition hover:bg-zinc-600"
-                            >
-                                Live <ExternalLink size={14} />
-                            </a>
+                            <div className="flex justify-center items-center">
+                                <Link
+                                    to={`/porject/${project.id}`}
+
+                                    className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 bg-zinc-700 rounded-full text-xs sm:text-sm dark:text-white transition hover:bg-white/10 "
+                                >
+                                    Details <ExternalLink size={14} />
+                                </Link>
+                                <a
+                                    href={project.liveUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 bg-zinc-700 rounded-full text-xs sm:text-sm dark:text-white transition hover:bg-white/10"
+                                >
+                                    Live <ExternalLink size={14} />
+                                </a>
+                            </div>
                         </div>
 
                         {/* Description */}
@@ -129,7 +134,7 @@ const ProjectHome = () => {
                         </p>
 
                         {/* Tech Stack */}
-                        <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                        <div className="flex flex-wrap gap-1.5 sm:gap-2  ">
                             {project.techStack.map((tech, index) => (
                                 <span
                                     key={index}

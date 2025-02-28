@@ -1,23 +1,30 @@
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { NavbarSimple } from "./component/NavbarSimple";
 import Home from "./component/Home";
-import { useState } from "react";
-import { createContext } from "react";
-import Footer from "./component/Footer";
 import Lastsection from "./component/Lastsection";
-export const gitUser = createContext();
-function App() {
+import { useState, createContext } from "react";
+import ProjectDetails from "./component/Pages/ProjectDetails";
 
+export const gitUser = createContext();
+
+function App() {
   const [gThem, setGThem] = useState(null);
+
   return (
-    <div className='bg-white min-h-screen dark:bg-dkColor dark:text-white'>
-      <gitUser.Provider value={[gThem, setGThem]}>
-        <NavbarSimple />
-        <Home />
-        <Lastsection />
-      </gitUser.Provider>
-    </div>
-  )
+    <Router>
+      <div className='bg-white min-h-screen dark:bg-dkColor dark:text-white'>
+        <gitUser.Provider value={[gThem, setGThem]}>
+          <NavbarSimple />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/porject/:id" element={<ProjectDetails />} />
+
+          </Routes>
+          <Lastsection />
+        </gitUser.Provider>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
