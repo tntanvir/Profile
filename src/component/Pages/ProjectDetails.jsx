@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import data from '../../data.json'
 import { Button } from '@material-tailwind/react';
-
+import { Link } from 'react-router-dom'
 const ProjectDetails = () => {
     const { id } = useParams();
     const [details, setSetdetails] = useState(null)
@@ -45,9 +45,12 @@ const ProjectDetails = () => {
                     />
                     <div className='pt-3'>
                         <div className='flex items-center gap-4'>
-                            <Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Clint</Button>
-                            <Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Server</Button>
-                            <Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Live</Button>
+                            <a href={details.client} target='_blank'><Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Clint</Button></a>
+
+                            <a href={details.server} target='_blank'>  <Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Server</Button>
+                            </a>
+                            <a href={details.liveUrl} target='_blank' >
+                                <Button variant='outlined' size='sm' className='dark:text-white border-green-500'>Live</Button> </a>
                         </div>
                         <div className='py-3 px-10 flex flex-col gap-4'>
                             <div className='flex flex-col gap-2'>
@@ -93,8 +96,9 @@ const ProjectDetails = () => {
                 </div>
             ) : (
                 <p>Loading...</p>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };
 

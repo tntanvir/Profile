@@ -4,6 +4,7 @@ import ProjectHome from './ProjectHome';
 import ContectHome from './ContectHome';
 import About from './About';
 import Cartificate from './Cartificate';
+import Blog from './Blog';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
             <ProjectHome />
 
             <Cartificate />
+            {/* <Blog /> */}
             <ContectHome />
 
         </div>

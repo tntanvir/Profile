@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { useContext } from 'react';
 import { gitUser } from '../App';
+import { Link } from 'react-router-dom'
 const Hero = () => {
     const [gThem, setGThem] = useContext(gitUser);
     return (
@@ -39,7 +40,9 @@ const Hero = () => {
                     <FaGithub className='hover:text-dkText cursor-pointer duration-100' />
                 </div>
                 <div>
-                    <Button className=' border border-dkText opacity-100 dark:text-white text-black bg-white/10 ' >Contect</Button>
+                    <Link to='/contect'>
+                        <Button className=' border border-dkText opacity-100 dark:text-white text-black bg-white/10 ' >Contect</Button>
+                    </Link>
                 </div>
             </div>
         </div>

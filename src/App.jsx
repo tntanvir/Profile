@@ -6,6 +6,7 @@ import { useState, createContext } from "react";
 import ProjectDetails from "./component/Pages/ProjectDetails";
 import ContectHome from "./component/ContectHome";
 import AboutPage from "./component/Pages/AboutPage";
+import BlogDetails from "./component/Pages/BlogDetails";
 
 export const gitUser = createContext();
 
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contect" element={<ContectHome />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
             <Route path="/porject/:id" element={<ProjectDetails />} />
 
           </Routes>
