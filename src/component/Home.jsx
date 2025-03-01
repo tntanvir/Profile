@@ -3,6 +3,8 @@ import Hero from './Hero';
 import ProjectHome from './ProjectHome';
 import ContectHome from './ContectHome';
 import About from './About';
+import Cartificate from './Cartificate';
+
 
 
 const Home = () => {
@@ -12,6 +14,7 @@ const Home = () => {
             <About />
             <ProjectHome />
 
+            <Cartificate />
             <ContectHome />
 
         </div>

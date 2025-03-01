@@ -69,7 +69,7 @@ const ContectHome = () => {
 
 
             </div>
-            <div className='flex md:flex-row flex-col  gap-2  w-full min-h-[60vh] pb-20 md:px-10 px-3 z-10'>
+            <div className='flex md:flex-row flex-col  gap-2  w-full min-h-[60vh] pb-20 md:px-10 px-1 z-10'>
                 <div className='flex justify-center md:w-1/2 w-full'>
                     <div className='flex flex-col  items-center w-full'>
                         <div className='w-full text-start pb-10 text-3xl font-semibold'>

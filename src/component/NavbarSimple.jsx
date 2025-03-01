@@ -34,9 +34,9 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-dkText transition-colors">
+                <Link to="/about" className="flex items-center hover:text-dkText transition-colors ">
                     About
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"

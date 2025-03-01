@@ -5,6 +5,7 @@ import Lastsection from "./component/Lastsection";
 import { useState, createContext } from "react";
 import ProjectDetails from "./component/Pages/ProjectDetails";
 import ContectHome from "./component/ContectHome";
+import AboutPage from "./component/Pages/AboutPage";
 
 export const gitUser = createContext();
 
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contect" element={<ContectHome />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/porject/:id" element={<ProjectDetails />} />
 
           </Routes>
