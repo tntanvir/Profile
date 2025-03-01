@@ -4,6 +4,7 @@ import Home from "./component/Home";
 import Lastsection from "./component/Lastsection";
 import { useState, createContext } from "react";
 import ProjectDetails from "./component/Pages/ProjectDetails";
+import ContectHome from "./component/ContectHome";
 
 export const gitUser = createContext();
 
@@ -17,6 +18,7 @@ function App() {
           <NavbarSimple />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/contect" element={<ContectHome />} />
             <Route path="/porject/:id" element={<ProjectDetails />} />
 
           </Routes>

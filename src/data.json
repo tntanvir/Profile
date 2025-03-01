@@ -2,46 +2,84 @@
     {
         "id": 1,
         "title": "Phibook",
-        "icon": "🐾",
+        "icon": "",
         "image": "phitbook",
         "description": "Connect, share, and engage with friends on our social media platform. Post updates, like, comment, and explore a vibrant community in real-time!",
         "liveUrl": "https://phibook1.web.app/",
-        "client": "",
-        "server": "",
+        "client": "https://github.com/tntanvir/phitBook",
+        "server": "https://github.com/tntanvir/api-phitbook",
         "techStack": [
             "React",
-            "Tailwind",
-            "Django REST framework"
+            "Tailwindcss",
+            "Django REST framework",
+            "PostgreSQL"
+        ],
+        "features": [
+            "User Authentication: Secure sign-up, login, and profile management.",
+            "Post Management: List, filter, and view detailed information about Post.",
+            "Like: Users can Like Post if user is Login.",
+            "Comment : Users can Comment Post if user is Login. ",
+            "Themeing(Dark mode/Light mode): User-friendly theme toggling system."
+        ],
+        "techstack": [
+            "React: A JavaScript library for building user interfaces. Provides dynamic, responsive UI components.",
+            "Tailwind CSS: Utility-first CSS framework for creating custom designs without writing custom CSS.",
+            "Material Tailwind: A popular React UI library offering a wide range of components to enhance the user interface."
         ]
     },
     {
         "id": 2,
         "title": "Style Swap",
-        "icon": "🐾",
+        "icon": "",
         "image": "style",
         "description": "An interactive eCommerce platform offering a seamless shopping experience with a variety of products, secure checkout, and user-friendly navigation for buyers and sellers.",
         "liveUrl": "https://style-23.web.app/",
-        "client": "",
-        "server": "",
+        "client": "https://github.com/tntanvir/style",
+        "server": "https://github.com/tntanvir/api-store",
         "techStack": [
             "React",
-            "Tailwind",
-            "Django REST framework"
+            "Tailwindcss",
+            "Django REST framework",
+            "PostgreSQL"
+        ],
+        "features": [
+            "User Authentication: Secure sign-up, login, and profile management.",
+            "Product Management: List, filter, and view detailed information about available Product.",
+            "Order System: Users can order product and make advance payments.",
+            "Admin Panel: Manage Product, and Manage Order",
+            "Payment Integration: Integrated with SSLCommerz for secure transactions."
+        ],
+        "techstack": [
+            "React: A JavaScript library for building user interfaces. Provides dynamic, responsive UI components.",
+            "Tailwind CSS: Utility-first CSS framework for creating custom designs without writing custom CSS.",
+            "Material Tailwind: A popular React UI library offering a wide range of components to enhance the user interface.",
+            "SSLCommerz: Payment gateway integration for handling payments securely and efficiently."
         ]
     },
     {
         "id": 3,
         "title": "Red Drop",
-        "icon": "🐾",
+        "icon": "",
         "image": "redDrop",
         "description": "Save lives by connecting blood donors with those in need. Join our blood donation platform to make a difference and help patients in critical situations.",
         "liveUrl": "https://red-drop-4d803.web.app/",
-        "client": "",
-        "server": "",
+        "client": "https://github.com/tntanvir/Red-Drop-Client",
+        "server": "https://github.com/tntanvir/Red-Drop-Django",
         "techStack": [
             "React",
-            "Tailwind",
-            "Django REST framework"
+            "Tailwindcss",
+            "Django REST framework",
+            "PostgreSQL"
+        ],
+        "features": [
+            "User Authentication: Secure sign-up, login, and profile management.",
+            "Blood Management: List, filter, and view detailed information about available Blood.",
+            "Donet System: Users can Donet Blood to request user"
+        ],
+        "techstack": [
+            "React: A JavaScript library for building user interfaces. Provides dynamic, responsive UI components.",
+            "Tailwind CSS: Utility-first CSS framework for creating custom designs without writing custom CSS.",
+            "Material Tailwind: A popular React UI library offering a wide range of components to enhance the user interface."
         ]
     }
 ]

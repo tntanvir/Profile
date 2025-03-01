@@ -14,6 +14,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { gitUser } from "../App";
 import { MdDarkMode } from "react-icons/md";
+import { Link } from "react-router-dom";
 function NavList() {
     return (
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 dark:text-white text-black cursor-pointer">
@@ -23,9 +24,9 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-dkText transition-colors ">
+                <Link to="/" className="flex items-center hover:text-dkText transition-colors ">
                     Home
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -43,9 +44,9 @@ function NavList() {
                 // color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex items-center hover:text-dkText transition-colors">
+                <Link to="/contect" className="flex items-center hover:text-dkText transition-colors">
                     Contect
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -127,14 +128,16 @@ export function NavbarSimple() {
 
         <Navbar className={`mx-auto max-w-screen md:px-24 py-3 rounded-none top-0 sticky z-50 ${scrl ? 'bg-transparent' : them === "dark" ? "bg-dkColor" : "bg-white"} border-none px-4 shadow-none `}>
             <div className="flex items-center justify-between  text-blue-gray-900 dark:text-white">
-                <Typography
-                    as="a"
-                    href="/"
-                    variant="h6"
-                    className="mr-4 cursor-pointer text-2xl py-1.5"
-                >
-                    Tanvir
-                </Typography>
+                <Link to="/">
+                    <Typography
+
+                        variant="h6"
+                        className="mr-4 cursor-pointer text-2xl py-1.5"
+                    >
+
+                        Tanvir
+                    </Typography>
+                </Link >
                 <div className="hidden lg:block">
                     <div className="flex items-center justify-center gap-6">
 

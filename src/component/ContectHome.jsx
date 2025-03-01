@@ -1,45 +1,145 @@
-import { Button } from "@material-tailwind/react";
-import { IoIosSend } from "react-icons/io";
+import { Typography } from '@material-tailwind/react';
+import { Button } from '@material-tailwind/react';
+import { Textarea } from '@material-tailwind/react';
+import { Input } from '@material-tailwind/react';
+import React from 'react';
+import { CiLocationOn } from 'react-icons/ci';
+import { FaLocationDot } from 'react-icons/fa6';
+import { HiOutlineMail } from 'react-icons/hi';
+import { IoCallOutline } from 'react-icons/io5';
+import { MdAddCall } from 'react-icons/md';
+import { motion } from "framer-motion"
 
-
-function ContectHome() {
+const ContectHome = () => {
     return (
-        <section className='min-h-screen pt-20 flex flex-col items-center md:px-28 p-4 contect  gap-20'>
-            <div className='text-center flex flex-col gap-7'>
-                <div>
-                    <h1 className='md:text-5xl text-3xl '>Contect Me</h1>
-                    <p>Get in touch.</p>
-                </div>
+        <div className='min-h-screen pt-20 flex flex-col  items-center gap-12 px-3 text-black dark:text-white relative overflow-hidden'>
+            <motion.div
+                className="absolute inset-0 flex items-center justify-center pointer-events-none "
+                animate={{
+                    y: [0, -20, 20, 0],
+                    x: [0, 15, -15, 0],
+                }}
+                transition={{
+                    duration: 4,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut",
+                }}
+            >
 
+                <div
+                    className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] rounded-full filter blur-[60px] sm:blur-[80px] md:blur-[90px] 
+                    bg-[#00dc82]/30 dark:bg-[#00dc82]/20"
+                ></div>
+            </motion.div>
+            <div className='md:w-1/2 w-full flex items-center flex-col text-center gap-3'>
+                <h1 className='text-4xl font-bold'>Let's get in touch</h1>
+                <p> We are open for any suggestion or just to have a chat</p>
             </div>
-            <div className='flex flex-col lg:flex-row justify-between items-center gap-10 w-full  md:px-10'>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15265.552781084501!2d88.76638956180435!3d25.650900152919522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb554e6d83ae8f%3A0xa8b5ce4ec2f76077!2sChirirbandar!5e0!3m2!1sen!2sbd!4v1706966762927!5m2!1sen!2sbd"
-                    loading="lazy"
 
-                    className="h-56 md:h-96 w-full  invert rounded-md"
-                ></iframe>
-                <div className='w-11/12 flex flex-col justify-center items-center'>
-                    <div className='flex flex-col gap-10 w-full '>
-                        <h1 className="text-xl text-center">WANNA START SOMETHING <span className=" text-dkText font-black text-3xl">GREAT?</span></h1>
-                        <div className='w-full flex flex-col lg:flex-row md:justify-between gap-2 items-center'>
-                            <input type="text" placeholder="EMAIL" className="input bg-transparent border-gray-300  input-success w-full max-w-xs  focus:opacity-100 focus:border-dkText focus:outline-none  " />
-                            <input type="text " placeholder="NAME" className="input bg-transparent   border-gray-300  w-full max-w-xs  focus:opacity-100 focus:border-dkText focus:outline-none " />
+            <div className='z-10'>
+                <div className='flex justify-center flex-wrap gap-3'>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                        <div>
+                            <CiLocationOn className='text-4xl text-[#00dc82]' />
                         </div>
-
-                        <textarea className="textarea textarea-success  bg-transparent border-gray-300 focus:opacity-100 focus:border-dkText focus:outline-none min-h-44" placeholder=" MESSAGE" ></textarea>
-                        <div className="flex justify-center">
-                            <Button className='gap-3 items-center px-10 py-2  rounded-full bg-transparent border border-dkText opacity-100 text-black dark:text-white text-center flex justify-between w-fit'>send
-                                <IoIosSend className="text-2xl" />
-                            </Button>
+                        <div>
+                            <h3 className='text-2xl'>Our Address</h3>
+                            <p>Mistiypara, Rangpur, Bangladesh,5290</p>
                         </div>
-
+                    </div>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                        <div>
+                            <IoCallOutline className='text-4xl text-[#00dc82]' />
+                        </div>
+                        <div>
+                            <h3 className='text-2xl'>Call Us</h3>
+                            <p>+880 1307629936</p>
+                        </div>
+                    </div>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                        <div>
+                            <HiOutlineMail className='text-4xl text-[#00dc82]' />
+                        </div>
+                        <div>
+                            <h3 className='text-2xl'>Email Us</h3>
+                            <p>tntanvir2382018@gmail.com</p>
+                        </div>
                     </div>
                 </div>
 
+
             </div>
-        </section>
-    )
-}
+            <div className='flex md:flex-row flex-col  gap-2  w-full min-h-[60vh] pb-20 md:px-10 px-3 z-10'>
+                <div className='flex justify-center md:w-1/2 w-full'>
+                    <div className='flex flex-col  items-center w-full'>
+                        <div className='w-full text-start pb-10 text-3xl font-semibold'>
+                            Have any Questions?
+                        </div>
+                        <div className='flex flex-col gap-5 w-full p-3'>
+                            <div className='flex md:flex-row flex-col  justify-between  gap-3 w-full'>
+                                <div className=' md:w-1/2 w-full'>
+                                    <Typography variant="h6" className="mb-3">
+                                        Your Name
+                                    </Typography>
+                                    <Input placeholder="Enter name"
+                                        className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                        labelProps={{
+                                            className: "hidden",
+                                        }}
+
+                                        containerProps={{ className: "min-w-[100px]" }} />
+                                </div>
+                                <div className=' md:w-1/2 w-full'>
+                                    <Typography variant="h6" className="mb-3">
+                                        Your Email
+                                    </Typography>
+                                    <Input placeholder="Email Address"
+                                        className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                        labelProps={{
+                                            className: "hidden",
+                                        }}
+                                        containerProps={{ className: "min-w-[100px]" }} />
+                                </div>
+                            </div>
+                            <div className='w-full'>
+                                <Typography variant="h6" className="mb-3">
+                                    Subject
+                                </Typography>
+                                <Input placeholder="Subject "
+                                    className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                    labelProps={{
+                                        className: "hidden",
+                                    }}
+                                    containerProps={{ className: "min-w-[100px]" }} />
+
+                                <Typography variant="h6" className="mb-3">
+                                    Your Message
+                                </Typography>
+                                <Textarea size="lg" label="Textarea Large" className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                    labelProps={{
+                                        className: "hidden",
+                                    }}
+                                    containerProps={{ className: "min-w-[100px]" }} placeholder='Message' />
+                            </div>
+                            <div>
+                                <Button className='bg-[#00dc82]'>Send</Button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-col justify-center items-center p-0 w-full md:w-1/2 h-96 md:h-auto overflow-hidden rounded-3xl'>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57498.01853384991!2d89.22080933508498!3d25.749873663775865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1726395677662!5m2!1sen!2sbd"
+                        width="600"
+                        height=""
+                        style={{ border: 0 }}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className='h-full w-full'></iframe>
+                </div>
+            </div>
+        </div>
+    );
+};
 
 export default ContectHome;

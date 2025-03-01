@@ -3,54 +3,18 @@
 import { motion } from "framer-motion"
 import { ExternalLink } from "lucide-react"
 
-import redDrop from '../project/redDrop.png'
-import phitbook from '../project/phitbook.png'
-import style from '../project/style.png'
+
 import { Link } from "react-router-dom";
 import projects from '../data.json'
 
-// const projectsd = [
-//     {
-//         id: 1,
-//         title: "Phibook",
-//         icon: "🐾",
-//         image: phitbook,
-//         description: "Connect, share, and engage with friends on our social media platform. Post updates, like, comment, and explore a vibrant community in real-time!",
-//         liveUrl: "https://phibook1.web.app/",
-//         client: '',
-//         server: '',
-//         techStack: ["React", "Tailwind", 'Django REST framework'],
-//     },
-//     {
-//         id: 2,
-//         title: "Style Swap",
-//         icon: "🐾",
-//         image: style,
-//         description: "An interactive eCommerce platform offering a seamless shopping experience with a variety of products, secure checkout, and user-friendly navigation for buyers and sellers.",
-//         liveUrl: "https://style-23.web.app/",
-//         client: '',
-//         server: '',
-//         techStack: ["React", "Tailwind", 'Django REST framework'],
-//     },
-//     {
-//         id: 3,
-//         title: "Red Drop",
-//         icon: "🐾",
-//         image: redDrop,
-//         description: "Save lives by connecting blood donors with those in need. Join our blood donation platform to make a difference and help patients in critical situations.",
-//         liveUrl: "https://red-drop-4d803.web.app/",
-//         client: '',
-//         server: '',
-//         techStack: ["React", "Tailwind", 'Django REST framework'],
-//     },
 
 
-// ]
-const imageMap = {
-    phitbook: phitbook,
-    style: style,
-    redDrop: redDrop
-};
+
+const images = import.meta.glob("../project/*.png", { eager: true });
+
+const getImagePath = (imageName) => images[`../project/${imageName}.png`]?.default || "/placeholder.svg";
+
+
 
 const ProjectHome = () => {
     return (
@@ -98,7 +62,7 @@ const ProjectHome = () => {
                         {/* Project Image */}
                         <div className="relative rounded-xl overflow-hidden mb-4 sm:mb-5 border border-zinc-700">
                             <img
-                                src={imageMap[project.image] || "/placeholder.svg"}
+                                src={getImagePath(project.image)}
                                 alt={project.title}
                                 className="w-full h-32 sm:h-40 object-cover"
                             />
