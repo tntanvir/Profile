@@ -34,7 +34,7 @@ const Hero = () => {
 
                 />
             </div>
-            <div className='flex justify-between  w-full items-center absolute bottom-6 md:px-28 px-6'>
+            <div className='flex justify-between  w-full items-center absolute bottom-6 md:px-28 px-4'>
                 <div className='flex md:gap-2 md:text-3xl gap-1 text-2xl '>
                     {[
                         { icon: <Github size={18} />, href: "https://github.com/tntanvir" },
@@ -54,7 +54,7 @@ const Hero = () => {
                 </div>
                 <div>
                     <Link to='/contect'>
-                        <Button className=' border border-dkText opacity-100 dark:text-white text-black bg-white/10 ' >Contect</Button>
+                        <Button className=' border border-dkText opacity-100 dark:text-white text-black bg-white/10 ' size='sm' >Contect</Button>
                     </Link>
                 </div>
             </div>

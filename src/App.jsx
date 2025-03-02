@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Router>
-      <div className='bg-white min-h-screen dark:bg-dkColor dark:text-white'>
+      <div className='bg-white min-h-screen dark:bg-dkColor dark:text-white m-0 p-0'>
         <gitUser.Provider value={[gThem, setGThem]}>
           <NavbarSimple />
           <Routes>

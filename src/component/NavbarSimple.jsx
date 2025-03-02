@@ -15,7 +15,7 @@ import { useContext } from "react";
 import { gitUser } from "../App";
 import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
-function NavList() {
+function NavList({ openNav, setOpenNav }) {
     return (
         <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 dark:text-white text-black cursor-pointer">
             <Typography
@@ -23,6 +23,7 @@ function NavList() {
                 variant="small"
                 // color="blue-gray"
                 className="p-1 font-medium"
+                onClick={() => setOpenNav(!openNav)}
             >
                 <Link to="/" className="flex items-center hover:text-dkText transition-colors ">
                     Home
@@ -33,6 +34,8 @@ function NavList() {
                 variant="small"
                 // color="blue-gray"
                 className="p-1 font-medium"
+                onClick={() => setOpenNav(!openNav)}
+
             >
                 <Link to="/about" className="flex items-center hover:text-dkText transition-colors ">
                     About
@@ -43,6 +46,8 @@ function NavList() {
                 variant="small"
                 // color="blue-gray"
                 className="p-1 font-medium"
+                onClick={() => setOpenNav(!openNav)}
+
             >
                 <Link to="/contect" className="flex items-center hover:text-dkText transition-colors">
                     Contect
@@ -53,6 +58,8 @@ function NavList() {
                 variant="small"
                 // color="blue-gray"
                 className="p-1 font-medium"
+                onClick={() => setOpenNav(!openNav)}
+
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors">
                     Blog
@@ -126,7 +133,7 @@ export function NavbarSimple() {
 
     return (
 
-        <Navbar className={`mx-auto max-w-screen md:px-24 py-3 rounded-none top-0 sticky z-50 ${scrl ? 'bg-transparent' : them === "dark" ? "bg-dkColor" : "bg-white"} border-none px-4 shadow-none `}>
+        <Navbar className={`mx-auto min-w-screen md:px-24 py-3 rounded-none top-0 sticky z-50 ${scrl ? 'bg-transparent' : them === "dark" ? "bg-dkColor" : "bg-white"} border-none px-4 shadow-none `}>
             <div className="flex items-center justify-between  text-blue-gray-900 dark:text-white">
                 <Link to="/">
                     <Typography
@@ -178,7 +185,7 @@ export function NavbarSimple() {
                 </div>
             </div>
             <Collapse open={openNav} >
-                <NavList />
+                <NavList openNav={openNav} setOpenNav={setOpenNav} />
 
             </Collapse>
         </Navbar>

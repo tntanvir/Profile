@@ -7,13 +7,13 @@ const AboutPage = () => {
     return (
         <div>
             <About />
-            <div className='p-10'>
 
-                <GItDetails />
-                <div className='pt-10'>
 
-                    <Cartificate />
-                </div>
+            <GItDetails />
+
+            <div className=' py-10'>
+
+                <Cartificate />
             </div>
         </div>
     );
