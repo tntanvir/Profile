@@ -55,7 +55,7 @@ function NavList() {
                 className="p-1 font-medium"
             >
                 <a href="#" className="flex items-center hover:text-dkText transition-colors">
-                    Bloge
+                    Blog
                 </a>
             </Typography>
         </ul>

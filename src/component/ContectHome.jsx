@@ -38,7 +38,7 @@ const ContectHome = () => {
 
             <div className='z-10'>
                 <div className='flex justify-center flex-wrap gap-3'>
-                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md border-[#00dc82]/20'>
                         <div>
                             <CiLocationOn className='text-4xl text-[#00dc82]' />
                         </div>
@@ -47,7 +47,7 @@ const ContectHome = () => {
                             <p>Mistiypara, Rangpur, Bangladesh,5290</p>
                         </div>
                     </div>
-                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md border-[#00dc82]/20'>
                         <div>
                             <IoCallOutline className='text-4xl text-[#00dc82]' />
                         </div>
@@ -56,7 +56,7 @@ const ContectHome = () => {
                             <p>+880 1307629936</p>
                         </div>
                     </div>
-                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md'>
+                    <div className='flex md:justify-center items-center gap-5 border p-2 md:w-96 w-full md:h-32 rounded-md border-[#00dc82]/20'>
                         <div>
                             <HiOutlineMail className='text-4xl text-[#00dc82]' />
                         </div>
@@ -75,14 +75,16 @@ const ContectHome = () => {
                         <div className='w-full text-start pb-10 text-3xl font-semibold'>
                             Have any Questions?
                         </div>
-                        <div className='flex flex-col gap-5 w-full p-3'>
+                        <div className='flex flex-col gap-5 w-full md:p-3'>
                             <div className='flex md:flex-row flex-col  justify-between  gap-3 w-full'>
                                 <div className=' md:w-1/2 w-full'>
                                     <Typography variant="h6" className="mb-3">
                                         Your Name
                                     </Typography>
                                     <Input placeholder="Enter name"
-                                        className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                        className="bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100
+                                         focus:!border-[#00dc82]/20
+                                          focus:!border-t-[#00dc82]/30  bg-transparent  dark:text-white !border-[#00dc82]/20"
                                         labelProps={{
                                             className: "hidden",
                                         }}
@@ -94,7 +96,9 @@ const ContectHome = () => {
                                         Your Email
                                     </Typography>
                                     <Input placeholder="Email Address"
-                                        className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                        className="bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100
+                                         focus:!border-[#00dc82]/20
+                                          focus:!border-t-[#00dc82]/30  bg-transparent  dark:text-white !border-[#00dc82]/20"
                                         labelProps={{
                                             className: "hidden",
                                         }}
@@ -106,7 +110,9 @@ const ContectHome = () => {
                                     Subject
                                 </Typography>
                                 <Input placeholder="Subject "
-                                    className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                    className="bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100
+                                         focus:!border-[#00dc82]/20
+                                          focus:!border-t-[#00dc82]/30  bg-transparent  dark:text-white !border-[#00dc82]/20"
                                     labelProps={{
                                         className: "hidden",
                                     }}
@@ -115,7 +121,9 @@ const ContectHome = () => {
                                 <Typography variant="h6" className="mb-3">
                                     Your Message
                                 </Typography>
-                                <Textarea size="lg" label="Textarea Large" className="!border !border-gray-300 bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100 focus:!border-gray-900 focus:!border-t-gray-900 focus:ring-gray-900/10 bg-transparent  dark:text-white"
+                                <Textarea size="lg" label="Textarea Large" className="bg-white text-gray-900 shadow-lg shadow-gray-900/5 ring-4 ring-transparent placeholder:text-gray-500 placeholder:opacity-100
+                                         focus:!border-[#00dc82]/20
+                                          focus:!border-t-[#00dc82]/30  bg-transparent  dark:text-white !border-[#00dc82]/20"
                                     labelProps={{
                                         className: "hidden",
                                     }}
@@ -127,7 +135,7 @@ const ContectHome = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col justify-center items-center p-0 w-full md:w-1/2 h-96 md:h-auto overflow-hidden rounded-3xl'>
+                <div className='flex flex-col justify-center items-center p-0 w-full md:w-1/2 h-96 md:h-auto overflow-hidden rounded-3xl border-[#00dc82]/20 border'>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57498.01853384991!2d89.22080933508498!3d25.749873663775865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1726395677662!5m2!1sen!2sbd"
                         width="600"
                         height=""

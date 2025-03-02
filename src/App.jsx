@@ -7,6 +7,7 @@ import ProjectDetails from "./component/Pages/ProjectDetails";
 import ContectHome from "./component/ContectHome";
 import AboutPage from "./component/Pages/AboutPage";
 import BlogDetails from "./component/Pages/BlogDetails";
+import Banner from "./component/Pages/Banner";
 
 export const gitUser = createContext();
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contect" element={<ContectHome />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/banner" element={<Banner />} />
             <Route path="/blogs/:id" element={<BlogDetails />} />
             <Route path="/porject/:id" element={<ProjectDetails />} />
 

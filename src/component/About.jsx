@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Facebook, Twitter, ExternalLink, Box, BookOpen, GraduationCap } from "lucide-react"
+import { Github, Linkedin, Facebook, Twitter, ExternalLink, Box, BookOpen, GraduationCap, Instagram } from "lucide-react"
 import myimg from "../assets/myimg.jpg"
 import Marquee from "react-fast-marquee"
 import { FaHtml5, FaCss3Alt, FaNode, FaReact, FaPython } from "react-icons/fa"
@@ -84,9 +84,10 @@ const About = () => {
 
                         <div className="mt-6 sm:mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
                             {[
+                                { icon: <Github size={18} />, href: "https://github.com/tntanvir" },
+                                { icon: <Facebook size={18} />, href: "https://www.facebook.com/tanvir.rahman.2382018" },
+                                { icon: <Instagram size={18} />, href: "https://www.instagram.com/_tanvir_rahaman_/" },
                                 { icon: <Linkedin size={18} />, href: "#" },
-                                { icon: <Github size={18} />, href: "#" },
-                                { icon: <Facebook size={18} />, href: "#" },
                                 { icon: <Twitter size={18} />, href: "#" },
                             ].map((social, index) => (
                                 <a
@@ -97,13 +98,7 @@ const About = () => {
                                     {social.icon}
                                 </a>
                             ))}
-                            {/* <a
-                                href="#"
-                                className="ml-auto inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-2.5 bg-[#00dc82] text-white dark:text-[#020420] rounded-full hover:bg-[#00b86c] transition-all hover:scale-105 shadow-lg font-semibold text-sm sm:text-base"
-                            >
-                                View Resume
-                                <ExternalLink size={16} />
-                            </a> */}
+
                             <Menu>
                                 <MenuHandler>
                                     <Button className="ml-auto inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-2.5 bg-[#00dc82] text-white dark:text-[#020420] rounded-full hover:bg-[#00b86c] transition-all hover:scale-105 shadow-lg font-semibold text-sm sm:text-base">Resume

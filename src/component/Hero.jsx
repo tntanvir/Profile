@@ -2,6 +2,7 @@ import { Button } from '@material-tailwind/react';
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
+import { Github, Linkedin, Facebook, Twitter, ExternalLink, Box, BookOpen, GraduationCap, Instagram } from "lucide-react"
 import { useContext } from 'react';
 import { gitUser } from '../App';
 import { Link } from 'react-router-dom'
@@ -34,10 +35,22 @@ const Hero = () => {
                 />
             </div>
             <div className='flex justify-between  w-full items-center absolute bottom-6 md:px-28 px-6'>
-                <div className='flex md:gap-5 md:text-3xl gap-2 text-2xl '>
-                    <FaFacebook className='hover:text-dkText cursor-pointer duration-100' />
-                    <FaInstagram className='hover:text-dkText cursor-pointer duration-100' />
-                    <FaGithub className='hover:text-dkText cursor-pointer duration-100' />
+                <div className='flex md:gap-2 md:text-3xl gap-1 text-2xl '>
+                    {[
+                        { icon: <Github size={18} />, href: "https://github.com/tntanvir" },
+                        { icon: <Facebook size={18} />, href: "https://www.facebook.com/tanvir.rahman.2382018" },
+                        { icon: <Instagram size={18} />, href: "https://www.instagram.com/_tanvir_rahaman_/" },
+                        { icon: <Linkedin size={18} />, href: "#" },
+                        { icon: <Twitter size={18} />, href: "#" },
+                    ].map((social, index) => (
+                        <a
+                            key={index}
+                            href={social.href}
+                            className="p-2 sm:p-3 bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-white rounded-full hover:bg-[#00dc82] hover:text-white transition-all hover:scale-110"
+                        >
+                            {social.icon}
+                        </a>
+                    ))}
                 </div>
                 <div>
                     <Link to='/contect'>
