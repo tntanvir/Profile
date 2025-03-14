@@ -14,9 +14,16 @@ const data = {
             image: "icpc",
         },
         {
+            title: "Phitron Batch-4",
+            description:
+                "Complete DAS,OOP,MySql,Django with Phitron",
+            date: "2025",
+            image: "phitron",
+        },
+        {
             title: "Skill Competition",
             description:
-                "Achieved top ranking in a national skill competition, demonstrating expertise in full-stack web development.",
+                "Participation in the 2025 Skills Competition at the Institute Level",
             date: "2025",
             image: "skill",
         },
@@ -111,11 +118,12 @@ const Cartificate = () => {
                             unmount: { scale: 0.9, y: -100 },
                         }}
                         size="lg"
-                        className="bg-transparent shadow-none w-fit"
+                        className="bg-transparent shadow-none w-fit border-none"
                         onClick={handleOpen}
+
                     >
 
-                        <DialogBody className="flex justify-center items-center  p-0">
+                        <DialogBody className="flex justify-center items-center  p-0 border-none">
 
                             <img
                                 src={getImagePath(img)}

@@ -1,6 +1,8 @@
 
 import { Github, Linkedin, Facebook, Twitter, ExternalLink, Box, BookOpen, GraduationCap, Instagram } from "lucide-react"
 import myimg from "../assets/myimg.jpg"
+import cv from "../cv/tanvir.pdf"
+
 import Marquee from "react-fast-marquee"
 import { FaHtml5, FaCss3Alt, FaNode, FaReact, FaPython } from "react-icons/fa"
 import { TbBrandNextjs } from "react-icons/tb"
@@ -87,13 +89,14 @@ const About = () => {
                                 { icon: <Github size={18} />, href: "https://github.com/tntanvir" },
                                 { icon: <Facebook size={18} />, href: "https://www.facebook.com/tanvir.rahman.2382018" },
                                 { icon: <Instagram size={18} />, href: "https://www.instagram.com/_tanvir_rahaman_/" },
-                                { icon: <Linkedin size={18} />, href: "#" },
-                                { icon: <Twitter size={18} />, href: "#" },
+                                { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/tntanvir/" },
+                                // { icon: <Twitter size={18} />, href: "#" },
                             ].map((social, index) => (
                                 <a
                                     key={index}
                                     href={social.href}
                                     className="p-2 sm:p-3 bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-white rounded-full hover:bg-[#00dc82] hover:text-white transition-all hover:scale-110"
+                                    target="_blank"
                                 >
                                     {social.icon}
                                 </a>
@@ -105,8 +108,8 @@ const About = () => {
                                         <ExternalLink size={16} /></Button>
                                 </MenuHandler>
                                 <MenuList className="bg-gray-200 dark:bg-white/10 text-gray-600 dark:text-white backdrop-blur-md border-[#00dc82]/20">
-                                    <a href="https://docs.google.com/document/d/1RESs1TUkTM11pQiHsjQk_IrTEcbv489EUrywV7m-x70/edit?usp=sharing" target="_blank"> <MenuItem>View</MenuItem></a>
-                                    <a href={myimg} download>
+                                    <a href="https://docs.google.com/document/d/1fA90hvaEbYS3xcQDgdXDeMVvJg3riiu6WsPjFC8Dybg/edit?tab=t.0" target="_blank"> <MenuItem>View</MenuItem></a>
+                                    <a href={cv} download>
                                         <MenuItem>
 
                                             Download

@@ -25,7 +25,8 @@ const Lastsection = () => {
                 <div className='   '>
                     <div className=" flex items-center gap-4  justify-end">
                         <a
-                            href="#"
+                            target='_blank'
+                            href="https://www.linkedin.com/in/tntanvir/"
                             className="md:p-3 p-2 border border-[#00dc82]/20  dark:bg-white/10 text-gray-600 dark:text-white rounded-full hover:bg-[#00dc82] hover:text-white transition-all hover:scale-110"
                         >
                             <Linkedin size={20} />
@@ -48,16 +49,16 @@ const Lastsection = () => {
                         >
                             <Instagram size={20} />
                         </a>
-                        <a
+                        {/* <a
                             href="#"
                             className="md:p-3 p-2 border border-[#00dc82]/20 dark:bg-white/10 text-gray-600 dark:text-white rounded-full hover:bg-[#00dc82] hover:text-white transition-all hover:scale-110 hidden md:block"
                         >
                             <Twitter size={20} />
-                        </a>
+                        </a> */}
 
                         <div class="voltage-button dark:text-white text-black px-2 ">
 
-                            <a href='https://docs.google.com/document/d/1RESs1TUkTM11pQiHsjQk_IrTEcbv489EUrywV7m-x70/edit?tab=t.0' target='_blank'>
+                            <a href='https://docs.google.com/document/d/1fA90hvaEbYS3xcQDgdXDeMVvJg3riiu6WsPjFC8Dybg/edit?tab=t.0' target='_blank'>
                                 <button className='px-2 py-2'>View my CV</button>
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 234.6 61.3" preserveAspectRatio="none" xml:space="preserve">
 

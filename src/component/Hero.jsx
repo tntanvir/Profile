@@ -40,8 +40,8 @@ const Hero = () => {
                         { icon: <Github size={18} />, href: "https://github.com/tntanvir" },
                         { icon: <Facebook size={18} />, href: "https://www.facebook.com/tanvir.rahman.2382018" },
                         { icon: <Instagram size={18} />, href: "https://www.instagram.com/_tanvir_rahaman_/" },
-                        { icon: <Linkedin size={18} />, href: "#" },
-                        { icon: <Twitter size={18} />, href: "#" },
+                        { icon: <Linkedin size={18} />, href: "https://www.linkedin.com/in/tntanvir/" },
+                        // { icon: <Twitter size={18} />, href: "#" },
                     ].map((social, index) => (
                         <a
                             key={index}
