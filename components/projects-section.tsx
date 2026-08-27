@@ -7,27 +7,17 @@ const projects = [
     id: "bp-liberia",
     name: "BP Liberia",
     tagline: "Music and video streaming platform",
-    description: "A streaming platform that allows artists to share their content and users to discover, stream, and interact with media. Features include user authentication, dedicated artist portal, engagement features, and dynamic media distribution.",
+    description: "A scalable music and video streaming platform empowering artists to share content globally. Built with Django and AWS S3, featuring robust user authentication, a dedicated artist portal, and high-performance dynamic media distribution.",
     tech: ["Django", "DRF", "PostgreSQL", "AWS S3", "Redis", "Celery", "Docker"],
     imageSrc: "/image/1stproject/previews.png",
     source: "https://github.com/tntanvir",
     demo: "https://www.bpnations.com/"
   },
-  // {
-  //   id: "mental-health",
-  //   name: "Mental Health Support Platform",
-  //   tagline: "Scalable mental health backend",
-  //   description: "A backend for a mental health support platform enabling users to track emotional well-being, interact with an AI chatbot, receive real-time notifications, and generate mental health reports securely.",
-  //   tech: ["Django", "DRF", "PostgreSQL", "Redis", "Celery", "WebSockets"],
-  //   imageSrc: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
-  //   source: "https://github.com/tntanvir",
-  //   demo: null
-  // },
   {
     id: "tntvs",
     name: "TNTVs",
     tagline: "Free Live Sports on Your Device",
-    description: "The ultimate destination for live sports streaming on Android. Watch live cricket, football, tennis, and premium sports channels from around the globe in stunning HD with multiple servers, live scores, and TV casting.",
+    description: "The ultimate Android application for live sports streaming. Watch live cricket, football, tennis, and premium sports channels in stunning HD. Features robust multi-server failover, real-time live scores, and seamless TV casting.",
     tech: ["Android", "Android TV", "Firestick", "Live Streaming", "Casting"],
     imageSrc: "/image/3rdproject/previews.png",
     source: null,
@@ -43,11 +33,11 @@ export function ProjectsSection() {
         <h2 className="text-3xl md:text-5xl font-bold text-foreground">Featured <span className="text-emerald-500 font-serif italic">Projects.</span> </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-4 sm:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto px-4 sm:px-0">
         {projects.map((project) => (
-          <div key={project.id} className="group border border-border/20 rounded-3xl overflow-hidden bg-zinc-950/50 flex flex-col hover:border-emerald-500/30 transition-colors">
+          <div key={project.id} className="group border border-border/20 rounded-2xl sm:rounded-3xl overflow-hidden bg-zinc-950/50 flex flex-col hover:border-emerald-500/30 transition-colors">
             {/* Image Placeholder */}
-            <div className="w-full h-48 sm:h-52 overflow-hidden bg-zinc-900 relative">
+            <div className="w-full h-40 sm:h-52 overflow-hidden bg-zinc-900 relative">
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10" />
               <img
                 src={project.imageSrc}
@@ -56,7 +46,7 @@ export function ProjectsSection() {
               />
             </div>
 
-            <div className="p-6 sm:p-8 flex flex-col flex-1">
+            <div className="p-4 sm:p-8 flex flex-col flex-1">
               <div className="flex justify-between items-start mb-4">
                 <h3 className="font-bold text-xl text-foreground group-hover:text-emerald-500 transition-colors">{project.name}</h3>
                 <div className="flex gap-3">

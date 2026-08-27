@@ -36,7 +36,7 @@ export function ProfileHeader() {
         <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,transparent_10%,var(--color-background)_100%)]"></div>
 
         <Spotlight
-          className="-top-40 left-0 md:left-60 md:-top-20"
+          className="top-[-10%] sm:-top-20 left-[-10%] sm:left-0 md:left-60 md:-top-20"
           fill="rgba(16, 185, 129, 0.5)"
         />
 
@@ -75,9 +75,9 @@ export function ProfileHeader() {
 
         <div className="absolute bottom-8 left-0 w-full flex flex-col sm:flex-row items-center justify-between px-8 sm:px-12 gap-6">
           <div className="flex gap-4">
-            <SocialLink href="https://github.com/tanvir" tooltip="GitHub" icon={<Github className="size-4" />} rotation="-10" />
-            <SocialLink href="#" tooltip="Facebook" icon={<Facebook className="size-4" />} rotation="5" />
-            <SocialLink href="#" tooltip="LinkedIn" icon={<Linkedin className="size-4" />} rotation="10" />
+            <SocialLink href="https://github.com/tntanvir" tooltip="GitHub" icon={<Github className="size-4" />} rotation="-10" />
+            <SocialLink href="https://www.facebook.com/tntanvirr/" tooltip="Facebook" icon={<Facebook className="size-4" />} rotation="5" />
+            <SocialLink href="https://www.linkedin.com/in/tntanvir" tooltip="LinkedIn" icon={<Linkedin className="size-4" />} rotation="10" />
             <SocialLink href="#" tooltip="Twitter" icon={<Twitter className="size-4" />} rotation="-5" />
           </div>
           <div>

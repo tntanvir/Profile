@@ -101,7 +101,7 @@ export function ExperienceSection() {
           </div>
 
           {/* Right Side: Scrollable Details */}
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-12 sm:gap-16">
             {experiences.map((exp, index) => (
               <motion.div
                 key={exp.id}

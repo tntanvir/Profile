@@ -6,7 +6,7 @@ export function ContactSection() {
   return (
     <SectionWrapper id="contact" className="pb-32 pt-0">
       <div className="max-w-5xl mx-auto  px-4 pt-0 sm:px-0">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 pt-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-24 pt-14">
 
           {/* Left Column: Big Typography & Info */}
           <div className="flex flex-col justify-between">
@@ -43,44 +43,56 @@ export function ContactSection() {
                   Dhaka, Bangladesh
                 </p>
               </div>
+
+              <div className="pt-4">
+                <a href="https://forms.gle/afCNPxNvB4cKD2YP6" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-8 py-4 rounded-full font-bold hover:bg-emerald-500 hover:text-black transition-all w-fit">
+                  <span className="text-sm tracking-wide">Fill out Google Form</span>
+                  <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Right Column: Premium Form */}
-          <div className="bg-zinc-950/30 border border-border/10 p-8 sm:p-12 rounded-[2.5rem] relative overflow-hidden backdrop-blur-sm">
+          <a 
+            href="https://forms.gle/afCNPxNvB4cKD2YP6" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block bg-zinc-950/30 border border-border/10 p-5 sm:p-12 rounded-3xl sm:rounded-[2.5rem] relative overflow-hidden backdrop-blur-sm hover:border-emerald-500/50 transition-all cursor-pointer group/card"
+          >
             <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
-            <form className="flex flex-col gap-10 relative z-10">
+            <div className="flex flex-col gap-8 sm:gap-10 relative z-10 pointer-events-none">
 
               <div className="relative group pt-4">
-                <input type="text" id="name" required className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Your Name" />
-                <label htmlFor="name" className="absolute left-0 top-6 text-muted-foreground text-base transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-valid:-top-2 peer-valid:text-xs peer-valid:text-muted-foreground cursor-text font-medium">What's your name?</label>
+                <input type="text" id="name" readOnly className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Your Name" />
+                <label htmlFor="name" className="absolute left-0 top-6 text-muted-foreground text-base transition-all">What's your name?</label>
               </div>
 
               <div className="relative group pt-4">
-                <input type="email" id="email" required className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Your Email" />
-                <label htmlFor="email" className="absolute left-0 top-6 text-muted-foreground text-base transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-valid:-top-2 peer-valid:text-xs peer-valid:text-muted-foreground cursor-text font-medium">What's your email address?</label>
+                <input type="email" id="email" readOnly className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Your Email" />
+                <label htmlFor="email" className="absolute left-0 top-6 text-muted-foreground text-base transition-all">What's your email address?</label>
               </div>
 
               <div className="relative group pt-4">
-                <input type="text" id="subject" required className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Subject" />
-                <label htmlFor="subject" className="absolute left-0 top-6 text-muted-foreground text-base transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-valid:-top-2 peer-valid:text-xs peer-valid:text-muted-foreground cursor-text font-medium">Subject</label>
+                <input type="text" id="subject" readOnly className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent" placeholder="Subject" />
+                <label htmlFor="subject" className="absolute left-0 top-6 text-muted-foreground text-base transition-all">Subject</label>
               </div>
 
               <div className="relative group pt-4">
-                <textarea id="message" required rows={4} className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent resize-none leading-relaxed" placeholder="Your Message"></textarea>
-                <label htmlFor="message" className="absolute left-0 top-6 text-muted-foreground text-base transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-emerald-500 peer-valid:-top-2 peer-valid:text-xs peer-valid:text-muted-foreground cursor-text font-medium">Tell me about your project...</label>
+                <textarea id="message" readOnly rows={4} className="w-full bg-transparent border-b border-border/30 py-2 text-foreground focus:outline-none focus:border-emerald-500 transition-colors peer placeholder-transparent resize-none leading-relaxed" placeholder="Your Message"></textarea>
+                <label htmlFor="message" className="absolute left-0 top-6 text-muted-foreground text-base transition-all">Tell me about your project...</label>
               </div>
 
-              <button type="button" className="group mt-4 flex items-center justify-between gap-4 bg-foreground text-background px-8 py-5 rounded-full font-bold hover:bg-emerald-500 hover:text-black transition-all w-full sm:w-fit shadow-xl shadow-black/20">
-                <span className="text-sm tracking-wide">Send Message</span>
-                <div className="bg-background text-foreground rounded-full p-2 group-hover:bg-black group-hover:text-emerald-500 transition-colors">
-                  <ArrowRight className="size-4 group-hover:-rotate-45 transition-transform" />
+              <div className="group/btn mt-4 flex items-center justify-between gap-4 bg-foreground text-background px-8 py-5 rounded-full font-bold group-hover/card:bg-emerald-500 group-hover/card:text-black transition-all w-full sm:w-fit shadow-xl shadow-black/20 pointer-events-auto">
+                <span className="text-sm tracking-wide">Fill Google Form</span>
+                <div className="bg-background text-foreground rounded-full p-2 group-hover/card:bg-black group-hover/card:text-emerald-500 transition-colors">
+                  <ArrowRight className="size-4 group-hover/card:-rotate-45 transition-transform" />
                 </div>
-              </button>
+              </div>
 
-            </form>
-          </div>
+            </div>
+          </a>
 
         </div>
       </div>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Understanding React Server Components",
+      "bn": "রিঅ্যাক্ট সার্ভার কম্পোনেন্টস বোঝা"
+    },
+    "date": "Aug 12, 2026",
+    "category": "React",
+    "excerpt": {
+      "en": "A deep dive into how Server Components change the way we build modern Next.js applications, improving performance and SEO.",
+      "bn": "কীভাবে সার্ভার কম্পোনেন্টস আধুনিক নেক্সট জেএস অ্যাপ্লিকেশনের পারফরম্যান্স এবং এসইও উন্নত করে, তার বিস্তারিত আলোচনা।"
+    },
+    "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop",
+    "content": {
+      "en": "React Server Components (RSC) represent a fundamental shift in how we build React applications. By executing components on the server ahead of time, we can drastically reduce the amount of JavaScript sent to the client, leading to faster page loads and better SEO.\n\nHistorically, React components ran entirely on the client side. This meant that the browser had to download the React library, the component code, and then execute it to render the HTML. With Server Components, this rendering happens on the server. The client only receives the final HTML and a small amount of JS for interactivity.\n\n### Benefits of Server Components\n- **Zero Bundle Size:** Server components add zero bytes to your client-side JavaScript bundle.\n- **Direct Backend Access:** You can directly query your database or access the file system within your React components without needing to build an API.\n- **Improved SEO:** Search engines can easily crawl the pre-rendered HTML.",
+      "bn": "রিঅ্যাক্ট সার্ভার কম্পোনেন্টস (RSC) রিঅ্যাক্ট অ্যাপ্লিকেশন তৈরির পদ্ধতিতে একটি বড় পরিবর্তন। আগে থেকে সার্ভারে কম্পোনেন্টগুলো রান করানোর মাধ্যমে ক্লায়েন্ট-সাইড জাভাস্ক্রিপ্ট অনেক কমানো সম্ভব, যা পেজ লোড এবং এসইও উন্নত করে।\n\nঐতিহাসিকভাবে রিঅ্যাক্ট কম্পোনেন্টগুলো ক্লায়েন্ট সাইডেই চলত। এর মানে ব্রাউজারকে রিঅ্যাক্ট লাইব্রেরি ও কম্পোনেন্ট কোড ডাউনলোড করে এইচটিএমএল রেন্ডার করতে হতো। কিন্তু সার্ভার কম্পোনেন্টসের মাধ্যমে এই রেন্ডারিং সার্ভারেই হয়ে যায়।\n\n### সার্ভার কম্পোনেন্টসের সুবিধাসমূহ\n- **জিরো বান্ডেল সাইজ:** সার্ভার কম্পোনেন্টস ক্লায়েন্ট সাইডে কোনো বাড়তি জাভাস্ক্রিপ্ট বান্ডেল যোগ করে না।\n- **সরাসরি ব্যাকএন্ড অ্যাক্সেস:** এপিআই তৈরি না করেই আপনি আপনার রিঅ্যাক্ট কম্পোনেন্টের ভেতর থেকে ডেটাবেস বা ফাইল সিস্টেমে সরাসরি অ্যাক্সেস করতে পারেন।\n- **উন্নত এসইও:** সার্চ ইঞ্জিনগুলো খুব সহজেই প্রি-রেন্ডার করা এইচটিএমএল ক্রল করতে পারে।"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Mastering Django ORM Queries",
+      "bn": "জ্যাঙ্গো ওআরএম কোয়েরি মাস্টারিং"
+    },
+    "date": "Jul 28, 2026",
+    "category": "Django",
+    "excerpt": {
+      "en": "Learn how to write efficient, optimized database queries using Django ORM to scale your backend seamlessly.",
+      "bn": "নিখুঁতভাবে ব্যাকএন্ড স্কেল করতে জ্যাঙ্গো ওআরএম ব্যবহার করে কীভাবে কার্যকরী ও অপ্টিমাইজড ডেটাবেস কোয়েরি লিখতে হয় তা শিখুন।"
+    },
+    "image": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&h=400&fit=crop",
+    "content": {
+      "en": "The Django Object-Relational Mapper (ORM) is incredibly powerful, but it's easy to accidentally write inefficient queries that slow down your application as your database grows.\n\nOne of the most common pitfalls is the 'N+1 query problem'. This happens when you retrieve a list of objects and then loop through them to access a related object. The ORM will execute one query to get the list, and then N additional queries for each related object.\n\n### Optimizing with select_related and prefetch_related\nTo solve the N+1 problem, Django provides `select_related` and `prefetch_related`.\n\n- Use `select_related` for 'foreign key' and 'one-to-one' relationships. It creates an SQL JOIN and includes the fields of the related object in the SELECT statement.\n- Use `prefetch_related` for 'many-to-many' and 'reverse foreign key' relationships. It does a separate lookup for each relationship and does the 'joining' in Python.\n\nMastering these two methods will solve 90% of your performance bottlenecks in Django.",
+      "bn": "জ্যাঙ্গো ওআরএম অত্যন্ত শক্তিশালী, তবে ভুলবশত অকার্যকর কোয়েরি লেখা খুব সহজ, যা ডেটাবেস বড় হওয়ার সাথে সাথে অ্যাপ্লিকেশনকে ধীর করে দেয়।\n\nসবচেয়ে সাধারণ সমস্যাগুলোর একটি হলো 'N+1 query problem'। এটি তখন ঘটে যখন আপনি একটি অবজেক্টের তালিকা পান এবং এর সম্পর্কিত অবজেক্ট অ্যাক্সেস করার জন্য লুপ চালান।\n\n### select_related এবং prefetch_related দিয়ে অপ্টিমাইজ করা\nN+1 সমস্যা সমাধানের জন্য জ্যাঙ্গো `select_related` এবং `prefetch_related` প্রদান করে।\n\n- 'ফরেন কি' এবং 'ওয়ান-টু-ওয়ান' সম্পর্কের জন্য `select_related` ব্যবহার করুন।\n- 'মেনি-টু-মেনি' এবং 'রিভার্স ফরেন কি' সম্পর্কের জন্য `prefetch_related` ব্যবহার করুন।\n\nএই দুটি পদ্ধতি আয়ত্ত করতে পারলে জ্যাঙ্গোর ৯০% পারফরম্যান্স সমস্যার সমাধান হয়ে যাবে।"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "The Future of Tailwind CSS",
+      "bn": "টেইলউইন্ড সিএসএস এর ভবিষ্যৎ"
+    },
+    "date": "Jun 15, 2026",
+    "category": "Styling",
+    "excerpt": {
+      "en": "Exploring the new features in Tailwind CSS v4 and how it simplifies utility-first styling for frontend developers.",
+      "bn": "টেইলউইন্ড সিএসএস v4 এর নতুন ফিচার এবং ফ্রন্টএন্ড ডেভেলপারদের জন্য এটি কীভাবে স্টাইলিং আরও সহজ করে তা নিয়ে আলোচনা।"
+    },
+    "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=600&h=400&fit=crop",
+    "content": {
+      "en": "Tailwind CSS has taken the frontend world by storm, and with version 4 on the horizon, it's about to get even better. The new engine promises faster build times and a streamlined configuration process.\n\n### What's New in v4?\nOne of the biggest changes is the move towards a unified engine. Previously, Tailwind relied on PostCSS and a separate JIT (Just-In-Time) compiler. In v4, this is integrated into a single, highly optimized Rust-based core.\n\nFurthermore, the configuration file is becoming more powerful, allowing for dynamic values and complex logic without needing a separate JavaScript file in some cases.\n\n### Should You Upgrade?\nAbsolutely. The performance benefits alone are worth it. If you're starting a new project, jumping straight into the latest version of Tailwind is highly recommended.",
+      "bn": "টেইলউইন্ড সিএসএস ফ্রন্টএন্ড দুনিয়ায় আলোড়ন তুলেছে, এবং v4 আসার সাথে সাথে এটি আরও উন্নত হতে যাচ্ছে। নতুন ইঞ্জিন দ্রুত বিল্ড টাইম এবং কনফিগারেশন প্রক্রিয়া আরও সহজ করার প্রতিশ্রুতি দেয়।\n\n### v4 এ নতুন কী আছে?\nসবচেয়ে বড় পরিবর্তন হলো ইউনিফাইড ইঞ্জিনের দিকে অগ্রসর হওয়া। আগে টেইলউইন্ড PostCSS এবং একটি আলাদা JIT কম্পাইলারের ওপর নির্ভরশীল ছিল।\n\nএছাড়া কনফিগারেশন ফাইল আরও শক্তিশালী হচ্ছে, যা আলাদা জাভাস্ক্রিপ্ট ফাইল ছাড়াই ডাইনামিক ভ্যালু এবং জটিল লজিক ব্যবহারের সুযোগ দেয়।\n\n### আপনার কি আপগ্রেড করা উচিত?\nঅবশ্যই। পারফরম্যান্স সুবিধাগুলোই এর জন্য যথেষ্ট। যদি আপনি নতুন প্রজেক্ট শুরু করেন, তবে টেইলউইন্ডের সর্বশেষ ভার্সন ব্যবহার করা খুবই সুপারিশকৃত।"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "A Guide to API Design",
+      "bn": "এপিআই ডিজাইনের গাইড"
+    },
+    "date": "May 02, 2026",
+    "category": "Backend",
+    "excerpt": {
+      "en": "Best practices for designing clean, maintainable, and scalable REST APIs for your web applications.",
+      "bn": "আপনার ওয়েব অ্যাপ্লিকেশনের জন্য পরিষ্কার, মেইন্টেইনেবল এবং স্কেলেবল রেস্ট এপিআই ডিজাইনের সেরা উপায়সমূহ।"
+    },
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+    "content": {
+      "en": "Designing a good API is just as important as writing the code that powers it. A well-designed API is intuitive, consistent, and easy for other developers to consume.\n\n### RESTful Principles\nWhen designing a REST API, always rely on HTTP methods (GET, POST, PUT, DELETE) and use resource-oriented URLs. For example, use `/users/123` instead of `/getUserById?id=123`.\n\n### Versioning\nAlways version your API from day one. Whether you include it in the URL (`/v1/users`) or in the headers, versioning prevents breaking changes from ruining the experience for your early adopters.",
+      "bn": "একটি ভালো এপিআই ডিজাইন করা ঠিক ততটাই গুরুত্বপূর্ণ যতটা এটি চালানোর জন্য কোড লেখা। ভালোভাবে ডিজাইন করা এপিআই ব্যবহার করা অন্যান্য ডেভেলপারদের জন্য অনেক সহজ।\n\n### রেস্টফুল নীতিমালা\nরেস্ট এপিআই ডিজাইনের সময় সর্বদা এইচটিটিপি মেথড (GET, POST, PUT, DELETE) ব্যবহার করুন এবং রিসোর্স-ভিত্তিক ইউআরএল ব্যবহার করুন। উদাহরণস্বরূপ, `/getUserById?id=123` এর বদলে `/users/123` ব্যবহার করুন।\n\n### ভার্সনিং\nপ্রথম দিন থেকেই আপনার এপিআই ভার্সনিং করুন। এটি ইউআরএলে হোক বা হেডারে, ভার্সনিং আপনার অ্যাপ্লিকেশনের শুরুতেই ব্রেকিং চেঞ্জ প্রতিরোধ করে।"
+    }
+  }
+]

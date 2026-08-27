@@ -49,7 +49,7 @@ export function AboutSection() {
                 <Mail className="size-4" />
               </a>
             </div>
-            <a href="#contact" className="bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-emerald-500 hover:text-black transition-all">
+            <a href="https://forms.gle/afCNPxNvB4cKD2YP6" target="_blank" rel="noopener noreferrer" className="bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-emerald-500 hover:text-black transition-all">
               Hire me
             </a>
           </div>
